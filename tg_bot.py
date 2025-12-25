@@ -5,11 +5,18 @@ import numpy as np
 import torch
 import librosa
 import joblib 
+from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from transformers import AutoFeatureExtractor, AutoModel
 
-API_TOKEN = '8438809962:AAHBHiaoCB_WiXDqDhQPDX9XV6dpuogdH-8' 
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+env_path = os.path.join(script_dir, ".env")
+
+load_dotenv(env_path, override=True)
+
+API_TOKEN = os.getenv("BOT_TOKEN")
 MODEL_NAME = "ntu-spml/distilhubert"
 CLASSIFIER_PATH = "model/hubert_emb_clf.joblib" 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
