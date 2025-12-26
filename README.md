@@ -40,4 +40,7 @@
 *   [Статья на Habr о распознавании языков](https://habr.com/ru/articles/462527/)
 *   [VoxLingua107 Dataset](https://cs.taltech.ee/staff/tanel.alumae/data/voxlingua107/)
 *   [Презентация с нашими результатами](https://docs.google.com/presentation/d/1kPBj5i88R4mQtwh5unHgpX9XGhqfoiV82urG5yVHyB0/edit?usp=sharing)
+*   [Ноутбук с классическим подходом на *kaggle*](https://www.kaggle.com/code/kekcuk/classic-ml)
+*   [Ноутбук с HuBERT на *kaggle*](https://www.kaggle.com/code/kekcuk/hubert-emb)
+
 
